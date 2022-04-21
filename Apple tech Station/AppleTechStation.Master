@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AppleTechStation.Master.cs" Inherits="Apple_tech_Station.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="LSpage.css" rel="stylesheet" />
+    <link href="Properties/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet" />
+    <link href="AppleTechStation.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <header style="background-color:saddlebrown">
+      <nav class="navbar navbar-expand-lg navbar-dark " style="margin:0;padding:0;background-color:#333333;">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href=""><i class="fa-brands fa-apple"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="display:inline-block;" class="me-5">
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav" >
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="">Store</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="">Mac</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="">iPad</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="">iPhone</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="">Watch</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="">AirPods</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="">TV & HOME</a>
+            </li>        
+            <li class="nav-item">
+              <a class="nav-link ps-3" href="#">Accessories</a>
+            </li>        <li class="nav-item">
+              <a class="nav-link ps-3" href="#">Support</a>
+            </li>
+          </ul>
+            <a class="navbar-brand ps-3" href="./Login.aspx"><button type="button" class="btn btn-outline-secondary btn-sm float-end">Login</button></a>
+        </div>
+        </div>
+
+      </div>
+    </nav>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    <%--<footer >
+        Copyright © 2022 AppleTechStation. All rights reserved.
+    </footer>--%>
+</body>
+</html>
